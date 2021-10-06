@@ -1,0 +1,34 @@
+{
+    "empty_name":{
+        "name": "",
+        "email": "Teste1@signup.com" ,
+        "password": "signup@123"
+    },
+    "empty_email":{
+        "name": "Teste 2",
+        "email": "" ,
+        "password": "signup@123"
+    },
+    "empty_password":{
+        "name": "Teste 3",
+        "email": "Teste3@signup.com" ,
+        "password": ""
+    },
+    "without_name":{        
+        "email": "Teste4@signup.com" ,
+        "password": ""
+    },
+    "without_email":{
+        "name": "Teste 5",
+        "password": "signup@123"
+    },
+    "without_password":{
+        "name": "Teste 6",
+        "email": "Teste6@signup.com" 
+    },
+    "wrong_email":{
+        "name": "Teste 7",
+        "email": "Teste7%$signup.com" ,
+        "password": "signup@123"
+    }
+}
