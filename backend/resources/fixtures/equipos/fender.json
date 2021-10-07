@@ -1,0 +1,8 @@
+{    
+    "payload":{        
+        "name": "Violino Stratus",
+        "category": "Cordas",
+        "price": 300
+    },
+    "thumb": "violino.png"
+}

@@ -17,3 +17,6 @@ robot -d ./log/signtests  ./tests/SignUpTests.robot
 
 ## AttemptSignupTests
 robot -d ./log/attemptsignuptests  ./tests/AttemptSignupTests.robot
+
+## AddEquiposTests
+robot -d ./log/addequipostests  ./tests/AddEquiposTests.robot

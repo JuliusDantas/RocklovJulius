@@ -10,3 +10,7 @@ def remove_user_by_email(user_email):
     # users.delete_many({'email': user_email})
     users.delete_many({'email': user_email})
 
+def remove_equipo(equipo_name):
+    equipos = db['equipos']
+    equipos.delete_many({'name': equipo_name})
+
