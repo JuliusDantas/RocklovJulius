@@ -20,3 +20,9 @@ robot -d ./log/attemptsignuptests  ./tests/AttemptSignupTests.robot
 
 ## AddEquiposTests
 robot -d ./log/addequipostests  ./tests/AddEquiposTests.robot
+
+## GetEquiposTests
+robot -d ./log/getequipostests  ./tests/GetEquiposTests.robot
+
+## DeleteEquiposTests
+robot -d ./log/deleteequipostests  ./tests/DeleteEquiposTests.robot

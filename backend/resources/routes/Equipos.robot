@@ -22,3 +22,27 @@ POST Equipo
     ...            expected_status=any
 
     [Return]    ${response}
+
+GET Unique Equipo
+    [Arguments]    ${token}     ${equipo_id}
+
+    &{headers}    Create Dictionary    user_token=${token}
+
+     ${response}    GET
+    ...            ${base_url}/equipos/${equipo_id}
+    ...            headers=${headers}
+    ...            expected_status=any
+
+    [Return]    ${response}
+
+DELETE Unique Equipo
+    [Arguments]    ${token}     ${equipo_id}
+
+    &{headers}    Create Dictionary    user_token=${token}
+
+     ${response}    DELETE
+    ...            ${base_url}/equipos/${equipo_id}
+    ...            headers=${headers}
+    ...            expected_status=any
+
+    [Return]    ${response}

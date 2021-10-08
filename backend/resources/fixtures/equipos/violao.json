@@ -1,0 +1,8 @@
+{    
+    "payload":{        
+        "name": "Violão Elétrico",
+        "category": "Cordas",
+        "price": 250
+    },
+    "thumb": "violao.png"
+}
