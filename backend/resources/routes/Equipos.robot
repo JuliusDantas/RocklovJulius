@@ -46,3 +46,15 @@ DELETE Unique Equipo
     ...            expected_status=any
 
     [Return]    ${response}
+
+GET List Equipos
+    [Arguments]    ${token}
+
+    &{headers}    Create Dictionary    user_token=${token}
+
+     ${response}    GET
+    ...            ${base_url}/equipos
+    ...            headers=${headers}
+    ...            expected_status=any
+
+    [Return]    ${response}

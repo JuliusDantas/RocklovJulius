@@ -7,22 +7,25 @@ robot -d ./log/testegoogle ./tests/TesteGoogle.robot
 robot -d ./log/suittests ./tests
 
 ## UserLoginTests
-robot -d ./log/logintests ./tests/UserLoginTest.robot
+robot -d ./log/logintests ./tests/sessions/UserLoginTest.robot
 
 ## AttemptLoginTests
-robot -d ./log/atemptlogin  ./tests/AttemptLoginTests.robot
+robot -d ./log/atemptlogin  ./tests/sessions/AttemptLoginTests.robot
 
 ## SignUpTests
-robot -d ./log/signtests  ./tests/SignUpTests.robot
+robot -d ./log/signtests  ./tests/signup/SignUpTests.robot
 
 ## AttemptSignupTests
-robot -d ./log/attemptsignuptests  ./tests/AttemptSignupTests.robot
+robot -d ./log/attemptsignuptests  ./tests/signup/AttemptSignupTests.robot
 
 ## AddEquiposTests
-robot -d ./log/addequipostests  ./tests/AddEquiposTests.robot
+robot -d ./log/addequipostests  ./tests/equipos/AddEquiposTests.robot
 
 ## GetEquiposTests
-robot -d ./log/getequipostests  ./tests/GetEquiposTests.robot
+robot -d ./log/getequipostests  ./tests/equipos/GetEquiposTests.robot
 
 ## DeleteEquiposTests
-robot -d ./log/deleteequipostests  ./tests/DeleteEquiposTests.robot
+robot -d ./log/deleteequipostests  ./tests/equipos/DeleteEquiposTests.robot
+
+## GetEquiposTests List
+robot -d ./log/getequipostestslist -i List  ./tests/equipos/GetEquiposTests.robot
