@@ -1,0 +1,34 @@
+[
+    {
+        "payload":{        
+            "name": "Violino Stratus",
+            "category": "Cordas",
+            "price": 300
+        },
+        "thumb": "violino.png"
+    },
+    {
+        "payload":{        
+            "name": "Piano de Mesa",
+            "category": "Teclas",
+            "price": 500
+        },
+        "thumb": "piano.png"
+    },
+    {
+        "payload":{        
+            "name": "Violão Elétrico",
+            "category": "Cordas",
+            "price": 250
+        },
+        "thumb": "violao.png" 
+    },
+    {
+        "payload":{        
+            "name": "Guitarra Acustica",
+            "category": "Cordas",
+            "price": 600
+        },
+        "thumb": "guitarra-semi-acustica.png" 
+    }
+]
