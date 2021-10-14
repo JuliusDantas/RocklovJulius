@@ -28,7 +28,7 @@ Duplicated Equipo
 
     # Dado que o equipo fender ja foi cadastrado
     ${Equipo}    GET Equipo           fender
-    ${token}     Get Token Service    ${EMAIL}    ${PASS}
+    Set Token From LS
 
     POST Equipo Service    ${Equipo}    ${token}
 

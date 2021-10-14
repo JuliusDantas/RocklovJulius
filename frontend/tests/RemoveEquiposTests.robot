@@ -3,7 +3,8 @@ Documentation    Remove Equipos Testes
 
 Resource    ${EXECDIR}/resources/Base.robot
 
-Suite Setup      Login Session    ${EMAIL}    ${PASS}
+Suite Setup      Run Keywords     Login Session              ${EMAIL}    ${PASS}
+...              AND              Set Token Suite From LS
 Test Teardown    Finish Teste 
 
 *Variables*
@@ -12,30 +13,30 @@ ${PASS}     henrique@123
 
 *Test Cases*
 Remove Equipo
-    [Tags]    rem_equipo
+    [Tags]       rem_equipo
     # Dado que tenho um equipo cadastrado
-    ${Equipo}    GET Equipo           saxofone
-    ${token}     Get Token Service    ${EMAIL}    ${PASS}
+    ${Equipo}    GET Equipo    saxofone
+
 
     Remove Equipo    ${Equipo}[name]
 
-    POST Equipo Service    ${Equipo}    ${token}
+    POST Equipo Service    ${Equipo}          ${TOKEN}
     Reload
     # Quando desejo remover o anúcnio do equipo
-    Request Removal     ${Equipo}[name]
+    Request Removal        ${Equipo}[name]
 
     # E confirmo que o equipo foi excluido
     Confirm Removal
 
     # Então o equipo excluido que foi excluido não deve ser exibido na lista
     Equipo Not Visible    ${Equipo}[name]
-   
+
 Remove Give Up
     [Tags]    rem_equipo
 
     # Dado que tenho um equipo cadastrado
     ${Equipo}    GET Equipo           conga
-    ${token}     Get Token Service    ${EMAIL}    ${PASS}
+    ${token}     Get Token From LS
 
     Remove Equipo    ${Equipo}[name]
 
@@ -43,7 +44,7 @@ Remove Give Up
     Reload
 
     # Quando desejo remover o anúcnio do equipo
-    Request Removal     ${Equipo}[name]
+    Request Removal    ${Equipo}[name]
 
     # E desisto da exclusão
     Not Confirm Removal

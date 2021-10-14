@@ -6,7 +6,7 @@ Library    OperatingSystem
 
 
 *Variable*
-${base_url}    https://rocklov-julius-api.herokuapp.com
+${base_url}    https://rocklov-julius-api2.herokuapp.com
 
 *Keywords*
 Get Token Service

@@ -3,7 +3,8 @@ user: juliusdb
 senha: bTsayCCTdQXZ7Ysn
 
 # Endereço api hospedada no Heroku
-https://rocklov-julius-api.herokuapp.com/
+https://rocklov-julius-api2.herokuapp.com/
+https://rocklov-julius-api2.herokuapp.com/
 
 ### Usuário teste api
 
@@ -13,9 +14,11 @@ https://rocklov-julius-api.herokuapp.com/
 
 # Endereço site Rocklov-julius
 https://rocklov-julius-web.herokuapp.com/
+https://rocklov-julius-web2.herokuapp.com/
 
 # Documentação da api
-https://rocklov-julius-api.herokuapp.com/api-docs
+https://rocklov-julius-api2.herokuapp.com/api-docs
+https://rocklov-julius-api2.herokuapp.com/api-docs
 
 # StatusCake
 https://app.statuscake.com/
