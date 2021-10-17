@@ -4,6 +4,9 @@ pip uninstall robotframework-browser
 # Teste Playwright
 robot -d ./log/testePlaywright ./tests/testePlaywright.robot
 
+# Teste de regressão
+robot -d ./log/suittest ./tests
+
 # Login
 robot -d ./log/login ./tests/Login.robot
 

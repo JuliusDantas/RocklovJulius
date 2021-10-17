@@ -4,7 +4,7 @@ Documentation    Login2 com Page Object Rocklov
 Resource    ${EXECDIR}/resources/Base.robot
 
 Test Setup       Start Sessions
-Test Teardown    Finish Session    
+Test Teardown    Finish Teste    
 
 *Test Cases*
 User Login

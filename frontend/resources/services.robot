@@ -9,6 +9,16 @@ Library    OperatingSystem
 ${base_url}    https://rocklov-julius-api2.herokuapp.com
 
 *Keywords*
+POST User Service
+    [Arguments]     ${payload}
+
+    ${response}     POST
+    ...     ${base_url}/signup
+    ...     json=${payload}
+
+    [return]      ${response} 
+
+
 Get Token Service
     [Arguments]    ${email}    ${password} 
 

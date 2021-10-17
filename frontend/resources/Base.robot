@@ -4,6 +4,7 @@ Documentation    Arquivo principal do projeto de automação
 Library    Browser
 Library    Collections
 Library    libs/mongo.py
+Library    OperatingSystem
 
 Resource    ${EXECDIR}/resources/actions/ActionLogin.robot
 Resource    ${EXECDIR}/resources/actions/EquipoActions.robot
