@@ -1,0 +1,5 @@
+backend/log
+backend/log/*
+frontend/log
+frontend/log/*
+__pycache__
