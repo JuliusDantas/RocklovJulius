@@ -8,5 +8,5 @@ Resource            ../resources/routes/Equipos.robot
 Resource            Helpers.robot
 
 *Variables*
-${base_url}         https://rocklov-julius-api.herokuapp.com
+${base_url}         https://rocklov-julius-api2.herokuapp.com
 
