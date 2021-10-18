@@ -24,4 +24,10 @@ pipeline {
             }
         }
     }
+    post{
+        always {
+            robot archiveDirName: 'robot-plugin', logFileName: '**/log/log.html', otherFiles: '**/log/**/*.png', outputFileName: '**/log/output.xml', outputPath: '', overwriteXAxisLabel: '', reportFileName: '**/log/report.html'
+            chuckNorris()
+        }
+    }
 }
