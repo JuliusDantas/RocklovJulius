@@ -20,7 +20,7 @@ Without Password     without_password.json     412              required passwor
 Attempt Login
     [Arguments]    ${json_file}    ${status_code}    ${message}
 
-    ${payload}          Get Json          Sessions      ${json_file}
+    ${payload}          Get Json          sessions      ${json_file}
     ${response}         POST Login        ${payload}
     Status Should Be    ${status_code}    ${response}
     Should Be Equal     ${message}        ${response.json()}[error]
