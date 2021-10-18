@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Run UI Tests') {
             steps {
-                sh 'cd frontend && robot -d ./log/suittestUI ./tests'
+                sh 'cd frontend && robot -d ./log/suittestUI -v headless:true ./tests'
             }
         }
     }

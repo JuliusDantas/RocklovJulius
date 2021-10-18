@@ -16,7 +16,7 @@ Resource    ${EXECDIR}/resources/services.robot
 
 *Keywords*
 Start Sessions
-    New Browser          chromium       False    slowMo=00:00:01
+    New Browser          chromium       headless=${headless}    slowMo=00:00:00.5
     New Page             about:blank
     Set Viewport Size    1024           768
 
