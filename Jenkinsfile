@@ -15,12 +15,12 @@ pipeline {
         }
         stage('Run API Tests') {
             steps {
-                sh 'cd backend && robot -d ./log/suittests ./tests'
+                sh 'cd backend && robot -d ./logs tests'
             }
         }
         stage('Run UI Tests') {
             steps {
-                sh 'cd frontend && robot -d ./log/suittest -v headless:true ./tests'
+                sh 'cd frontend && robot -d ./logs -v headless:true tests'
             }
         }
     }
