@@ -38,4 +38,4 @@ Login Session
 
     Start Sessions
     ActionLogin.Login With    ${email}    ${password}
-    User Should Be Logged In
+    ActionLogin.User Should Be Logged In
