@@ -16,7 +16,7 @@ Resource    ${EXECDIR}/resources/services.robot
 
 *Keywords*
 Start Sessions
-    New Browser          chromium       headless=${headless}    slowMo=00:00:00.5
+    New Browser          chromium       headless=${headless}    slowMo=00:00:00.05
     New Page             about:blank
     Set Viewport Size    1024           768
 
@@ -38,4 +38,4 @@ Login Session
 
     Start Sessions
     ActionLogin.Login With    ${email}    ${password}
-
+    User Should Be Logged In

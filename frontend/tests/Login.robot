@@ -14,7 +14,7 @@ User Login
 
     # Preciso preencher o campo e-mail e senha para realizar o login
     ActionLogin.Login With    henrique@henrique.com    henrique@123
-
+    User Should Be Logged In
     # Então acesso o dashbord dos anuncios
     ActionLogin.User Should Be Logged In    css=.dashboard
 
